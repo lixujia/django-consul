@@ -13,7 +13,7 @@ setuptools.setup(
     description="A django app which register django service to consul server.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/lixujia/django-consul",
     packages=setuptools.find_packages(
         exclude=[
             'DjangoConsul',
