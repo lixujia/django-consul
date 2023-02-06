@@ -3,23 +3,24 @@ from .settings import *
 
 
 _service_payload = {
-  "Name": SERVICE_NAME,
-  "Tags": ["primary", "v1"],
-  "Address": SERVICE_ADDRESS,
-  "Port": SERVICE_PORT,
-  "Meta": {
-    "version": "0.1.0"
-  },
-  "EnableTagOverride": True,
-  "Check": {
-    "http": CHECK_URL,
-    "Interval": "10s",
-    "Timeout": "5s"
-  },
-  "Weights": {
-    "Passing": 10,
-    "Warning": 1
-  }
+    "ID": SERVICE_ID,
+    "Name": SERVICE_NAME,
+    "Tags": ["primary", "v1"],
+    "Address": SERVICE_ADDRESS,
+    "Port": SERVICE_PORT,
+    "Meta": {
+        "version": SERVICE_VERSION
+    },
+    "EnableTagOverride": True,
+    "Check": {
+        "http": CHECK_URL,
+        "Interval": "10s",
+        "Timeout": "5s"
+    },
+    "Weights": {
+        "Passing": 10,
+        "Warning": 1
+    }
 }
 
 
