@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django-consul",
-    version="0.1.0",
+    version="0.3.0",
     author="Xujia Li",
     author_email="lixujiacn@outlook.com",
     description="A django app which register django service to consul server.",
@@ -27,7 +27,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'consulate'
+        'Django',
+        'requests'
     ],
     python_requires='>=3.6'
 )
